@@ -4,7 +4,7 @@ import { Box } from '@mui/material';
 import { ChannelDetail, VideoDetail, SearchFeed, Navbar, Feed } from './components';
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter>
     <Box sx={{ backgroundColor: '#000' }}>
       <Navbar />
       <Routes>
@@ -14,7 +14,7 @@ const App = () => (
         <Route path='/search/:searchTerm' element={<SearchFeed />} />
       </Routes>
     </Box>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;
